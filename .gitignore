@@ -1,0 +1,35 @@
+# Sensitive data
+.env
+.env.local
+linkedin_cookies_playwright.json
+linkedin_session.json
+autonomous_posting_log.json
+
+# Generated files
+daily_news_cache.json
+generated_posts.json
+
+# Browser data
+chrome_profile/
+
+# Screenshots (keep last few only)
+debug_screenshots/*.png
+!debug_screenshots/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

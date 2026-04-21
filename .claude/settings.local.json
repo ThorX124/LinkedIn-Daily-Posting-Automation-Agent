@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 setup.py)",
+      "Bash(pip install:*)",
+      "Bash(chmod +x:*)",
+      "Bash(pip3 list:*)",
+      "Bash(wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub)",
+      "Bash(sudo apt-key:*)",
+      "Bash(sudo tee:*)",
+      "Read(//tmp/**)",
+      "Bash(wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)",
+      "Bash(mkdir -p /tmp/chrome-local)",
+      "Bash(dpkg-deb -x /tmp/google-chrome-stable_current_amd64.deb /tmp/chrome-local)",
+      "Bash(python3 -m pip install selenium webdriver-manager --user)",
+      "Bash(python3:*)",
+      "Bash(pip3 --version)",
+      "Bash(apt list:*)",
+      "Bash(python:*)",
+      "Read(//usr/**)",
+      "Bash(command -v python3)",
+      "Bash(command -v python)",
+      "Read(//c/Users/BattleStation/AppData/Local/Programs/Python//**)",
+      "Bash(find /c -name \"python.exe\" -type f)",
+      "Bash(/c/Users/BattleStation/AppData/Local/Programs/Python/Python314/python.exe:*)",
+      "Bash(py daily_fresh_poster.py --auto)",
+      "Bash(py -c \"print\\('Python working'\\)\")",
+      "Bash(py -m py_compile daily_fresh_poster.py news_fetcher.py agentic_ai_news_content_generator.py autonomous_linkedin_poster.py)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

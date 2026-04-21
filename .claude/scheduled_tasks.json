@@ -1,0 +1,12 @@
+{
+  "tasks": [
+    {
+      "id": "518a2fe6",
+      "cron": "0 9 * * *",
+      "prompt": "Run the daily fresh Agentic AI LinkedIn poster with new content. Execute: cd \"E:\\Anas Stuff\\SMIT\\LinkedIn Automation\" && python daily_fresh_poster.py --auto",
+      "createdAt": 1776692707354,
+      "recurring": true,
+      "lastFiredAt": 1776765521175
+    }
+  ]
+}
