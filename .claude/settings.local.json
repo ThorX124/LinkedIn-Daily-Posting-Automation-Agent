@@ -30,7 +30,16 @@
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
       "Bash(gh repo *)",
-      "Skill(update-config)"
+      "Skill(update-config)",
+      "Bash(where python *)",
+      "Bash(where.exe python *)",
+      "Bash(dir /s /b \"C:\\\\Program Files\\\\Python*\")",
+      "Bash(dir /s /b \"%LOCALAPPDATA%\\\\Programs\\\\Python\\\\*\")",
+      "Bash(py *)",
+      "Bash(where python3 *)",
+      "Bash(powershell *)",
+      "Bash(Get-Command python *)",
+      "Bash(Select-Object -ExpandProperty Source)"
     ]
   }
 }
