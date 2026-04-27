@@ -86,10 +86,19 @@ def generate_news_digest_post(news_data):
         "Research": "🔍"
     }
 
+    source_links = []
     for i, item in enumerate(news_items[:3], 1):
         emoji = category_emojis.get(item.get('category', ''), '✨')
         lines.append(f"{i}. {emoji} {item['headline']}")
         lines.append(f"   {item['summary']}")
+        if item.get('url'):
+            source_links.append(f"   🔗 {item['headline']}: {item['url']}")
+        lines.append("")
+
+    # Add source links
+    if source_links:
+        lines.append("🔗 Sources:")
+        lines.extend(source_links)
         lines.append("")
 
     # Add trending topic
@@ -144,7 +153,9 @@ def generate_single_story_post(news_data):
     lines.append("")
     lines.append("💬 What do you think about this development?")
     lines.append("")
-    lines.append(f"Source: {top_story.get('source', 'Industry News')}")
+    lines.append(f"📰 Source: {top_story.get('source', 'Industry News')}")
+    if top_story.get('url'):
+        lines.append(f"🔗 Read more: {top_story['url']}")
     lines.append("")
     lines.append("#AgenticAI #AI #Innovation #TechNews #Automation #FutureOfWork")
 
@@ -172,11 +183,19 @@ def generate_insights_post(news_data):
     lines.append("Key developments across the ecosystem:")
     lines.append("")
 
+    source_links = []
     for item in news_data['news_items']:
         emoji = "✅" if "Launch" in item.get('category', '') else "🔹"
         lines.append(f"{emoji} {item['headline']}")
+        if item.get('url'):
+            source_links.append(f"🔗 {item['headline']}: {item['url']}")
 
     lines.append("")
+    if source_links:
+        lines.append("📚 Sources:")
+        lines.extend(source_links)
+        lines.append("")
+
     lines.append("🎯 The Big Picture:")
     lines.append(f"Activity in {category_text} shows the market maturing rapidly.")
     lines.append("Enterprise adoption is accelerating as trust in autonomous systems grows.")

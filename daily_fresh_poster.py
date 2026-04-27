@@ -14,11 +14,29 @@ sys.stdout.reconfigure(encoding='utf-8')
 SCRIPT_DIR = Path(__file__).parent
 
 
+def get_python_executable():
+    """Get Python executable - prefer 'py' launcher on Windows"""
+    import platform
+    if platform.system() == 'Windows':
+        # Try py launcher first (Windows Python launcher)
+        try:
+            result = subprocess.run(['py', '--version'], capture_output=True, timeout=5)
+            if result.returncode == 0:
+                return ['py']
+        except Exception:
+            pass
+    # Fallback to sys.executable
+    return [sys.executable]
+
+
+PYTHON = get_python_executable()
+
+
 def fetch_and_generate_content():
     """Fetch news and generate content"""
     try:
         result = subprocess.run(
-            [sys.executable, str(SCRIPT_DIR / "agentic_ai_news_content_generator.py")],
+            PYTHON + [str(SCRIPT_DIR / "agentic_ai_news_content_generator.py")],
             capture_output=True,
             text=True,
             encoding='utf-8',
@@ -59,7 +77,7 @@ def post_to_linkedin(text):
     """Post to LinkedIn using the autonomous poster"""
     try:
         result = subprocess.run(
-            [sys.executable, str(SCRIPT_DIR / "autonomous_linkedin_poster.py"), text],
+            PYTHON + [str(SCRIPT_DIR / "autonomous_linkedin_poster.py"), text],
             capture_output=True,
             text=True,
             encoding='utf-8',

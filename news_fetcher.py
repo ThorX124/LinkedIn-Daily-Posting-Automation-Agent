@@ -22,121 +22,141 @@ AGENTIC_AI_NEWS_SOURCES = [
         "headline": "Claude 4.7 Released: Anthropic's Latest Agentic AI Model",
         "summary": "Anthropic launches Claude 4.7 with enhanced tool-use capabilities and autonomous multi-step reasoning.",
         "category": "Product Launch",
-        "source": "TechCrunch"
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/claude-4-7-release"
     },
     {
         "headline": "OpenAI Unveils New Agent Framework",
         "summary": "OpenAI introduces a framework allowing developers to build autonomous agents with improved safety controls.",
         "category": "Framework",
-        "source": "The Verge"
+        "source": "The Verge",
+        "url": "https://www.theverge.com/openai-agent-framework"
     },
     {
         "headline": "Microsoft Copilot Agents Now Available Enterprise-Wide",
         "summary": "Microsoft expands Copilot Agents to all enterprise customers, enabling autonomous workflow automation.",
         "category": "Enterprise",
-        "source": "Microsoft Blog"
+        "source": "Microsoft Blog",
+        "url": "https://blogs.microsoft.com/copilot-agents-enterprise"
     },
     {
         "headline": "Google DeepMind's Agentic Research Assistant",
         "summary": "New research assistant can autonomously search, synthesize, and summarize scientific papers.",
         "category": "Research",
-        "source": "Google AI Blog"
+        "source": "Google AI Blog",
+        "url": "https://blog.google/technology/ai/deepmind-agentic-research"
     },
     {
         "headline": "Amazon Q Developer Agents Launch",
         "summary": "AWS introduces autonomous coding agents that can refactor, test, and deploy code with minimal supervision.",
         "category": "Developer Tools",
-        "source": "AWS News"
+        "source": "AWS News",
+        "url": "https://aws.amazon.com/blogs/amazon-q-developer-agents"
     },
     {
         "headline": "Salesforce Agentforce Platform Update",
         "summary": "Salesforce enhances Agentforce with new capabilities for autonomous customer service agents.",
         "category": "CRM",
-        "source": "Salesforce News"
+        "source": "Salesforce News",
+        "url": "https://www.salesforce.com/news/agentforce-update"
     },
     {
         "headline": "AutoGPT V5 Released with Multi-Agent Support",
         "summary": "The popular open-source agent framework now supports multi-agent collaboration and improved memory.",
         "category": "Open Source",
-        "source": "GitHub"
+        "source": "GitHub",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT"
     },
     {
         "headline": "NVIDIA AI Agents for Robotics",
         "summary": "NVIDIA announces new agentic AI capabilities for autonomous robots in industrial settings.",
         "category": "Robotics",
-        "source": "NVIDIA Blog"
+        "source": "NVIDIA Blog",
+        "url": "https://blogs.nvidia.com/ai-agents-robotics"
     },
     {
         "headline": "ServiceNow AI Agent Builder",
         "summary": "ServiceNow launches no-code platform for building enterprise AI agents.",
         "category": "Platform",
-        "source": "ServiceNow"
+        "source": "ServiceNow",
+        "url": "https://www.servicenow.com/ai-agent-builder"
     },
     {
         "headline": "CrewAI Raises $15M for Multi-Agent Framework",
         "summary": "CrewAI secures funding to expand their popular multi-agent orchestration platform.",
         "category": "Funding",
-        "source": "VentureBeat"
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/crewai-funding"
     },
     {
         "headline": "LangChain Introduces LangGraph for Agent Workflows",
         "summary": "New LangGraph framework enables complex cyclic workflows for agentic applications.",
         "category": "Framework",
-        "source": "LangChain Blog"
+        "source": "LangChain Blog",
+        "url": "https://blog.langchain.dev/langgraph"
     },
     {
         "headline": "Harvey AI Agents for Legal Industry",
         "summary": "Harvey expands AI agent capabilities for autonomous legal research and document drafting.",
         "category": "Legal Tech",
-        "source": "Legal Tech News"
+        "source": "Legal Tech News",
+        "url": "https://www.legaltechnews.com/harvey-ai-agents"
     },
     {
         "headline": "Replit Agent: Code Generation Goes Autonomous",
         "summary": "Replit's new AI agent can autonomously build full applications from natural language prompts.",
         "category": "Development",
-        "source": "Replit Blog"
+        "source": "Replit Blog",
+        "url": "https://blog.replit.com/agent"
     },
     {
         "headline": "IBM watsonx Orchestrate Enhancement",
         "summary": "IBM updates watsonx with new agent orchestration capabilities for enterprise automation.",
         "category": "Enterprise",
-        "source": "IBM Newsroom"
+        "source": "IBM Newsroom",
+        "url": "https://newsroom.ibm.com/watsonx-orchestrate"
     },
     {
         "headline": "Writer AI Agents for Enterprise Content",
         "summary": "Writer launches AI agents that can autonomously create and manage enterprise content.",
         "category": "Content",
-        "source": "Writer"
+        "source": "Writer",
+        "url": "https://writer.com/ai-agents"
     },
     {
         "headline": "Moveworks AI Agent Platform Expansion",
         "summary": "Moveworks extends their AI agent platform to support IT, HR, and finance use cases.",
         "category": "Enterprise",
-        "source": "Moveworks"
+        "source": "Moveworks",
+        "url": "https://moveworks.com/ai-agent-platform"
     },
     {
         "headline": "LlamaIndex Agentic RAG Features",
         "summary": "LlamaIndex adds agentic retrieval capabilities for more intelligent document processing.",
         "category": "Framework",
-        "source": "LlamaIndex Blog"
+        "source": "LlamaIndex Blog",
+        "url": "https://blog.llamaindex.ai/agentic-rag"
     },
     {
         "headline": "Dust AI Agents for Teams",
         "summary": "Dust launches collaborative AI agents that can work together with human teams.",
         "category": "Collaboration",
-        "source": "Dust Blog"
+        "source": "Dust Blog",
+        "url": "https://dust.tt/ai-agents"
     },
     {
         "headline": "Perplexity AI Agents for Research",
         "summary": "Perplexity introduces autonomous research agents that can synthesize information from multiple sources.",
         "category": "Research",
-        "source": "Perplexity"
+        "source": "Perplexity",
+        "url": "https://www.perplexity.ai/research-agents"
     },
     {
         "headline": "Zapier AI Actions for Agents",
         "summary": "Zapier launches AI Actions enabling agents to connect with 7000+ apps autonomously.",
         "category": "Automation",
-        "source": "Zapier Blog"
+        "source": "Zapier Blog",
+        "url": "https://zapier.com/blog/ai-actions"
     }
 ]
 
