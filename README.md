@@ -5,8 +5,33 @@ Daily news-based LinkedIn posting automation for Agentic AI content.
 ## How It Works
 
 1. **Fetch News** - Gets daily Agentic AI news from curated sources
-2. **Generate Content** - Creates LinkedIn posts based on the news
+2. **Generate Content** - Creates LinkedIn posts based on the news (with source links)
 3. **Post to LinkedIn** - Automatically publishes using saved browser session
+
+## Automated Daily Posting (Windows Task Scheduler)
+
+Set up automated daily posting that runs even when you're not at your PC:
+
+### One-Time Setup:
+
+1. **Run the installer** (as Administrator):
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File "INSTALL_TASK.ps1"
+   ```
+
+2. **Verify in Task Scheduler**:
+   - Press `Win + R`, type `taskschd.msc`, press Enter
+   - Find "LinkedIn Daily Poster" in the list
+   - Right-click → Run (to test)
+
+### What it does:
+- Runs daily at **2:00 PM PKT (9:00 AM UTC)**
+- Wakes your PC automatically (if BIOS supports wake timers)
+- Runs even if the scheduled time was missed (catches up)
+- Requires network connection
+
+### To change the schedule:
+Edit `INSTALL_TASK.ps1` and change the time, then re-run it.
 
 ## Files
 
